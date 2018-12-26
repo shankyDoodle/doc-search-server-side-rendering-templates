@@ -1,0 +1,437 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    float: left;
+    background-image: radial-gradient(circle, #ffffff, #d4d5d6, #aaacaf, #808589, #596164);
+}
+
+.appContainerWrapper {
+    height: 80%;
+    padding: 5% 20%;
+}
+
+.appContainer {
+    float: left;
+    height: 100%;
+    width: 100%;
+    background: #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 177px -26px rgba(0, 0, 0, 0.45);
+}
+
+.headerBarContainer {
+    height: 70px;
+    background: #596164;
+    float: left;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.appName {
+    float: left;
+    line-height: 70px;
+    font-size: 27px;
+    margin-left: 15px;
+    color: #e6e6e6;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navigator {
+    float: right;
+    line-height: 70px;
+    margin-right: 15px;
+}
+
+.navigatorButton {
+    float: left;
+    margin: 0 10px;
+}
+
+a.navigatorLink {
+    color: #e6e6e6;
+    text-decoration: unset;
+    font-size: 18px;
+    display: inline-block;
+    transition: all .4s ease;
+}
+
+a.navigatorLink:hover {
+    transform: scale(1.05);
+}
+
+.bodyContainer {
+    float: left;
+    height: calc(100% - 70px);
+    width: 100%;
+}
+
+.homeActionButtonsContainer {
+    float: left;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homeActionButton {
+    float: left;
+    width: 40%;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.6);
+    transition: all .4s ease;
+}
+
+.homeActionButton:hover {
+    box-shadow: 0px 0px 20px 1px rgba(128, 128, 128, 0.6);
+}
+
+a.navigatorHomeLink {
+    display: inline-block;
+    height: 200px;
+    float: left;
+    width: 100%;
+    text-decoration: unset;
+    color: #586164;
+}
+
+span.homeActionButtonLabel {
+    text-align: center;
+    font-size: 25px;
+    float: left;
+    width: 100%;
+    margin: 75px 0 0 0;
+}
+
+span.homeActionButtonDescription {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.fileDropZoneContainer {
+    float: left;
+    width: 90%;
+    height: 75%;
+    margin: 5% 5% 0 5%;
+    border: 1px #58616452 dashed;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+form.dropzone {
+    float: left;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+}
+
+.inputDropzone {
+    float: left;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.addFileButton{
+    float: right;
+    width: 10%;
+    margin: 10px 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    background: #586164;
+    border-radius: 10px;
+    color: aliceblue;
+    box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.69);
+    opacity: .8;
+    transition: all .2s ease;
+}
+
+.addFileButton:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+div#showFileName {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px;
+    color: #586164;
+}
+
+span.dropHere {
+    position: absolute;
+    left: 43%;
+    font-size: 19px;
+    color: #586164;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.errorMessageFileUpload{
+    z-index: 1;
+    float: left;
+    width: 90%;
+    margin: 7% 5% 0px 5%;
+    border-radius: 10px;
+    opacity: 1;
+    font-size: 20px;
+    color: red;
+}
+
+.docContentContainer {
+    float: left;
+    width: calc(90% - 20px);
+    height: calc(85% - 20px);
+    margin: 5% 5% 0 5%;
+    padding: 10px;
+    box-shadow: 0px 0px 2px 0px rgba(128, 128, 128, 0.6);
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+.docContentErrorMessage{
+    position: absolute;
+    float: left;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+
+.docContentContainer::-webkit-scrollbar {
+    background: #e6e6e6;
+    width: 6px;
+}
+
+.docContentContainer::-webkit-scrollbar-thumb {
+    background: #5861648f;
+    width: 3px;
+    border-radius: 10px;
+}
+
+.searchBarContainerForm {
+    float: left;
+    width: 90%;
+    margin: 5% 5% 0 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px rgba(128, 128, 128, 0.6);
+    height: 10%;
+    position: relative;
+    background: #ececec;
+}
+
+.dummyWrapper {
+    position: absolute;
+    float: left;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input.searchInput {
+    float: left;
+    width: 60%;
+    margin: 0 5%;
+    height: 40px;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+input.searchInput:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.searchSubmitButton {
+    float: left;
+    width: 10%;
+    margin: 0 5%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    background: #586164;
+    border-radius: 10px;
+    color: aliceblue;
+    box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.69);
+    opacity: .8;
+    transition: all .2s ease;
+}
+
+#ghostPaginationInput{
+    display: none;
+}
+
+.searchSubmitButton:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.searchListContainer {
+    float: left;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px rgba(128, 128, 128, 0.6);
+    height: 100%;
+    position: relative;
+    background: #ececec;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.searchListContainer::-webkit-scrollbar {
+    background: #ececec;
+    width: 6px;
+}
+
+.searchListContainer::-webkit-scrollbar-thumb {
+    background: #5861648f;
+    width: 3px;
+    border-radius: 10px;
+}
+
+.searchListPaginationWrapper {
+    position: relative;
+    float: left;
+    width: 90%;
+    margin: 5% 5% 0 5%;
+    height: 70%;
+}
+
+.nothingToShow {
+    position: absolute;
+    float: left;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 20px;
+    color: #586164;
+}
+
+.errorMessage {
+    position: absolute;
+    float: left;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+
+.listNode {
+    min-height: 40px;
+    margin: 2% 2% 0 2%;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 1px 0px rgba(128, 128, 128, 0.6);
+    border-radius: 10px;
+    float: left;
+    width: calc(96% - 40px);
+}
+
+.listNode:last-child{
+    margin-bottom: 50px;
+}
+
+a.listHeader {
+    color: #586164;
+    text-decoration: unset;
+    font-size: 18px;
+    display: inline-block;
+    transition: all .4s ease;
+    float: left;
+    font-weight: 600;
+}
+
+a.listHeader:hover {
+    text-decoration: underline #586164;
+}
+
+span.doc-line {
+    padding: 0 20px;
+    color: #586164;
+    float: left;
+    width: 100%;
+}
+
+.search-term{
+    color: #ff4b2a;
+    font-weight: bold;
+}
+
+.nextPrevContainer {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    float: right;
+    width: 150px;
+    z-index: 1;
+}
+
+.prevButton {
+    float: right;
+    width: 70px;
+    margin: 0 1%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    background: #586164;
+    border-radius: 10px;
+    color: aliceblue;
+    box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.69);
+    opacity: .8;
+    transition: all .2s ease;
+}
+
+.nextButton {
+    float: right;
+    width: 70px;
+    margin: 0 1%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    background: #586164;
+    border-radius: 10px;
+    color: aliceblue;
+    box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.69);
+    opacity: .8;
+    transition: all .2s ease;
+}
+
+.prevButton:hover,.nextButton:hover{
+    opacity: 1;
+    cursor: pointer;
+}

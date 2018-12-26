@@ -1,0 +1,14 @@
+Server Side rendering using Mustache templates.
+
+Pre-requisite:
+a running web server (in this case running doc-search-web-serve from other repository).
+
+
+Setup:
+* Download or clone.
+* run npm install.
+
+
+Running command:
+$node index.js PORT_NO RUNNING_WEB_SERVER
+
