@@ -1,5 +1,10 @@
 Server Side rendering using Mustache templates.
 
+DEMO link:
+This application is live on AWS at
+http://3.16.149.228:1236/docs/index.html
+------------------------------------------------------------------------------------------
+
 Pre-requisite:
 a running web server (in this case running doc-search-web-serve from other repository).
 
